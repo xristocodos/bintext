@@ -43,10 +43,11 @@ numclump = charclump.to_i
 clear_screen
 print_vars(phrase_in, charclump)
 
-puts "here goes code for making string for output"
-puts "here goes code for scanning input by char and outputting binary"
+### puts "here goes code for scanning input by char and outputting binary"
+# output_prespace = "0110111100100000011010000110000101101001" #DEBUG
 
-output_prespace = "0110111100100000011010000110000101101001" #DEBUG
+output_prespace = ""
+output_prespace += phrase_in[0].unpack('B8')[0]
 output_postspace = output_prespace.scan(/.{1,#{numclump}}/).join(' ')
 binding.pry
 puts "raw: #{output_prespace}"
