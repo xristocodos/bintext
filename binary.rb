@@ -11,7 +11,7 @@ end
 
 def print_vars(phrasedisp, clumpsizedisp)
   puts "String is:".blue + " " + phrasedisp + "\n"
-  puts "Charclump:".blue + " " + clumpsizedisp + "\n"
+  puts "bitchunks:".blue + " " + clumpsizedisp + "\n"
   puts "---------------------------------------------\n\n"
 end
 
